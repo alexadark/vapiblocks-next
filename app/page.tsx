@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="flex flex-col h-full items-center justify-between p-1 ">
       <div>
-        <div>
+        {/* <div>
           <a
             href="https://vapiblocks.com"
             target="_blank"
@@ -13,7 +13,7 @@ export default function Home() {
           >
             Orb by VapiBlocks
           </a>
-        </div>
+        </div> */}
       </div>
       {/* <Orb /> */}
       <VapiGlob />
