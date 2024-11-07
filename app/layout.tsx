@@ -37,7 +37,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className={`min-h-screen ${darkMode ? 'dark' : ''}`}>
-          <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800 transition-colors duration-300 flex flex-col">
+          <div className="min-h-screen bg-gradient-to-b from-gray-950 via-black to-gray-950 text-gray-100 transition-colors duration-300 flex flex-col">
             <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
             <main className="pt-24 flex-grow">{children}</main>
             <Footer />

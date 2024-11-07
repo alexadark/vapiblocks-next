@@ -27,7 +27,7 @@ export default function HowItWorksSection() {
 
   return (
     <section
-      className="py-40 bg-gray-50 dark:bg-gray-800 w-full"
+      className="py-40 bg-gray-50 dark:bg-gray-900 w-full"
       id="how-it-works"
     >
       <div className="container mx-auto px-4">

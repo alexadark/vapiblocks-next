@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function AboutSection() {
   return (
-    <section className="py-40 bg-white dark:bg-gray-900 w-full" id="about">
+    <section className="py-40 bg-white dark:bg-black/40 w-full" id="about">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center">
           <motion.div

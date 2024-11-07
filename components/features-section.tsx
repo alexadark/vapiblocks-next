@@ -26,7 +26,7 @@ export default function FeaturesSection() {
   ];
 
   return (
-    <section className="py-40 bg-gray-50 dark:bg-gray-800 w-full" id="features">
+    <section className="py-40 bg-gray-50 dark:bg-gray-900 w-full" id="features">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">
           Empower Your Sales with AI

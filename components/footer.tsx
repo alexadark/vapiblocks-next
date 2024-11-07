@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-white dark:bg-gray-900 transition-colors duration-300 py-20">
+    <footer className="w-full bg-black/40 backdrop-blur-sm border-t border-gray-800 py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand Column */}
@@ -18,25 +18,23 @@ export default function Footer() {
                 height={40}
                 className="rounded-full"
               />
-              <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+              <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
                 AINomics
               </span>
             </div>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className="text-gray-400">
               AI that feels like an extension of you
             </p>
           </div>
 
           {/* Products Column */}
           <div>
-            <h3 className="font-semibold text-gray-900 dark:text-white mb-4">
-              Products
-            </h3>
+            <h3 className="font-semibold text-white mb-4">Products</h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="#features"
-                  className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                  className="text-gray-400 hover:text-blue-400 transition-colors"
                 >
                   AI4Sales
                 </Link>
@@ -44,7 +42,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                  className="text-gray-400 hover:text-blue-400 transition-colors"
                 >
                   Solutions
                 </Link>
@@ -52,7 +50,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                  className="text-gray-400 hover:text-blue-400 transition-colors"
                 >
                   Pricing
                 </Link>
@@ -62,14 +60,12 @@ export default function Footer() {
 
           {/* Company Column */}
           <div>
-            <h3 className="font-semibold text-gray-900 dark:text-white mb-4">
-              Company
-            </h3>
+            <h3 className="font-semibold text-white mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="#about"
-                  className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                  className="text-gray-400 hover:text-blue-400 transition-colors"
                 >
                   About Us
                 </Link>
@@ -77,7 +73,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                  className="text-gray-400 hover:text-blue-400 transition-colors"
                 >
                   Careers
                 </Link>
@@ -85,7 +81,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                  className="text-gray-400 hover:text-blue-400 transition-colors"
                 >
                   Contact
                 </Link>
@@ -95,14 +91,12 @@ export default function Footer() {
 
           {/* Legal Column */}
           <div>
-            <h3 className="font-semibold text-gray-900 dark:text-white mb-4">
-              Legal
-            </h3>
+            <h3 className="font-semibold text-white mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="#"
-                  className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                  className="text-gray-400 hover:text-blue-400 transition-colors"
                 >
                   Privacy Policy
                 </Link>
@@ -110,7 +104,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="#"
-                  className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                  className="text-gray-400 hover:text-blue-400 transition-colors"
                 >
                   Terms of Service
                 </Link>
@@ -119,7 +113,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-200 dark:border-gray-700 mt-8 pt-8 text-center text-gray-600 dark:text-gray-300">
+        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
           <p>© {new Date().getFullYear()} AINomics. All rights reserved.</p>
         </div>
       </div>
