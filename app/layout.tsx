@@ -3,6 +3,7 @@
 import '@/app/globals.css';
 import { useState, useEffect } from 'react';
 import Header from '@/components/header';
+import Footer from '@/components/footer';
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -15,7 +16,6 @@ export default function RootLayout({
   const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
-    // Check if there's a stored preference, otherwise default to dark mode
     const storedDarkMode = localStorage.getItem('darkMode');
     setDarkMode(storedDarkMode === null ? true : storedDarkMode === 'true');
   }, []);
@@ -37,9 +37,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className={`min-h-screen ${darkMode ? 'dark' : ''}`}>
-          <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800 transition-colors duration-300">
+          <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800 transition-colors duration-300 flex flex-col">
             <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-            <main className="pt-24">{children}</main>
+            <main className="pt-24 flex-grow">{children}</main>
+            <Footer />
           </div>
         </div>
       </body>

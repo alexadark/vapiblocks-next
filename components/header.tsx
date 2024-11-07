@@ -18,6 +18,17 @@ export default function Header({
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleScrollToSection = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    sectionId: string
+  ) => {
+    e.preventDefault();
+    const element = document.querySelector(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -42,26 +53,29 @@ export default function Header({
           <ul className="flex space-x-6">
             <li>
               <Link
-                href="#"
-                className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                href="#features"
+                onClick={(e) => handleScrollToSection(e, '#features')}
+                className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer"
               >
-                Products
+                Features
               </Link>
             </li>
             <li>
               <Link
-                href="#"
-                className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                href="#about"
+                onClick={(e) => handleScrollToSection(e, '#about')}
+                className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer"
               >
                 About
               </Link>
             </li>
             <li>
               <Link
-                href="#"
-                className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                href="#how-it-works"
+                onClick={(e) => handleScrollToSection(e, '#how-it-works')}
+                className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer"
               >
-                Contact
+                How it works
               </Link>
             </li>
           </ul>

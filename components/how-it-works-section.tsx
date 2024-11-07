@@ -26,7 +26,10 @@ export default function HowItWorksSection() {
   ];
 
   return (
-    <section className="py-40 bg-gray-50 dark:bg-gray-800 w-full">
+    <section
+      className="py-40 bg-gray-50 dark:bg-gray-800 w-full"
+      id="how-it-works"
+    >
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">
           How AI4Sales Works
