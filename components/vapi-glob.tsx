@@ -50,12 +50,19 @@ const ParentComponent: React.FC = () => {
   }, [isSessionActive, volumeLevel]);
 
   return (
-    <div style={{ width: '100%', height: '100%' }}>
-      {/* <ConfigSheet config={config} setConfig={setConfig} /> */}
+    <div className="relative w-full h-full">
       <AbstractBall {...config} />
-      <div className="flex justify-center mt-4">
-        <Button onClick={toggleCall} className="m-2">
-          {isSessionActive ? <PhoneOff size={18} /> : <MicIcon size={18} />}
+      <div className="absolute inset-0 flex items-center justify-center">
+        <Button
+          onClick={toggleCall}
+          size="lg"
+          className="rounded-full p-6 bg-black/20 backdrop-blur-sm hover:bg-black/40 transition-all duration-300"
+        >
+          {isSessionActive ? (
+            <PhoneOff className="w-6 h-6" />
+          ) : (
+            <MicIcon className="w-6 h-6" />
+          )}
         </Button>
       </div>
     </div>

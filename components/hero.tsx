@@ -3,6 +3,8 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import VapiGlob from '@/components/vapi-glob';
+import Orb from '@/components/orb';
+import Visualizer from '@/components/Visualizer';
 
 const Hero = () => {
   return (
@@ -37,7 +39,9 @@ const Hero = () => {
         transition={{ duration: 0.8 }}
         className="relative w-1/2 flex justify-center"
       >
+        {/* <Visualizer /> */}
         <VapiGlob />
+        {/* <Orb /> */}
       </motion.div>
     </div>
   );
