@@ -1,4 +1,5 @@
 // import Orb from '@/components/orb';
+import Hero from '@/components/hero';
 import VapiGlob from '@/components/vapi-glob';
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       </div>
       {/* <Orb /> */}
       <VapiGlob />
+      <Hero />
     </main>
   );
 }
