@@ -1,7 +1,9 @@
 // import Orb from '@/components/orb';
 import Hero from '@/components/hero';
-import VapiGlob from '@/components/vapi-glob';
+import FeaturesSection from '@/components/features-section';
 
+import AboutSection from '@/components/about-section';
+import HowItWorksSection from '@/components/how-it-works-section';
 export default function Home() {
   return (
     <main className="flex flex-col h-full items-center justify-between p-1 ">
@@ -17,8 +19,12 @@ export default function Home() {
         </div> */}
       </div>
       {/* <Orb /> */}
-      <VapiGlob />
+      {/* <VapiGlob /> */}
       <Hero />
+      <FeaturesSection />
+      <AboutSection />
+
+      <HowItWorksSection />
     </main>
   );
 }
